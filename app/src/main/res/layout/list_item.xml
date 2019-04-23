@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wordView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/wordImage"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height" />
+
+    <RelativeLayout
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/wordImage"
+        android:layout_toEndOf="@+id/wordImage"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:id="@+id/miwokWord"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="bottom"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="Miwok word" />
+
+        <TextView
+            android:id="@+id/englishWord"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/miwokWord"
+            android:gravity="top"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            tools:text="English word" />
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:contentDescription="@string/play_button_desc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/play_arrow_white"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
